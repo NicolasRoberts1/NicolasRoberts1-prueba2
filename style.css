@@ -1,0 +1,396 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #73B2D9;
+}
+
+header{
+    display:flex;
+    background-image: url(./img/BannerArg.jpg);
+    height: 200px;
+    background-position-y: -620px;
+    background-position-x: 30px;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-mario{
+    width: 150px;
+    height: 150px;
+    background: none;
+    transition: all 0.7s ease-in-out;
+}
+.inicio{
+    background: none;
+}
+.logo-mario:hover{
+    transform: scaleX(1.2);
+    transition: all 0.7s ease-in-out;
+}
+h1{
+    flex-wrap:wrap;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3rem;
+    background: none;
+    
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #A69256;
+    padding:0.7rem;
+    height: 3.7rem;
+}
+
+.a-nav{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    background-color: #73B2D9;
+    padding:10px;
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 13rem;
+    height: 2.5em;
+    text-align: center;
+    margin-left: 15px;
+    transform: all 0.7s;
+}
+.a-nav:hover{
+    transform: scale(1.2) rotate(15deg);
+    transition: all 0.7s ease-in-out;
+    background-color: white;
+    color:#73B2D9;
+}
+.actual{
+    flex-wrap: wrap;
+    background-color: black;
+    color:white;
+}
+.titulo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+}
+
+.contenedor-posters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 97vw;
+    height: 80vh;
+    margin-bottom: 3rem;
+}
+
+.posters-imagenes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90vw;
+    height: 80vh;
+}
+.poster{
+    width: 15%;
+    object-fit: cover;
+    transition: all 0.7s ease-in-out;     
+}
+.poster:hover{
+    flex-grow: 1;
+    transition: all 0.7s ease-in-out;
+}
+
+.contenedor_cards{
+    display: flex;
+    width: 40vw;
+    height: 60vh;
+
+}
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 95vw;
+    height: 600px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carta{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    padding: 15px;
+    margin:10px; 
+    gap:1.5rem;
+    border-radius: 15px;
+}
+.carta img{
+    width:50%;
+    background-color: coral;
+    object-fit:contain;
+    
+}
+.carta-texto{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carta-texto h3{
+    display: flex;
+    background-color: white;
+}
+
+.carta-texto p{
+    display:flex;
+    background-color: white;
+}
+
+.carta:hover{
+    transform: scale(1.2);
+    transition:all 0.7s ease-in-out;
+}
+/* Contenedor jugadores*/
+/*JUGADORES*/
+
+.contenedorJugadores{
+    display: flex;
+    flex-direction: column;
+    height: 1900px;
+}
+.filtrarPos{
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox{
+    display: flex;
+    
+    align-items: center;
+    margin:10px;
+    padding: 10px;
+}
+#filtro{
+    margin-right: 15px;
+    margin-left: 100px;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#buscar{
+    margin-left: 15px;
+    padding:5px;
+    border-radius: 50px;
+}
+
+/* CARTAS DINAMICAS */
+.container{
+    display: inline;
+    justify-items: center;
+    width: 80vw;
+    height: 60vh;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    min-height: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buscar {
+    width: 80vw;
+}
+
+fieldset {
+    text-align: center;
+}
+
+#contenedor_cards{
+    justify-items: center;
+    text-align: center; 
+    width: 100vw;
+    height: 60vh;
+}
+
+.container_info {
+    display: flex;
+  }
+
+  .column {
+    width: 50%;
+    padding: 20px;
+  }
+
+  input:focus {
+    background-color:lightblue;
+  }
+
+#lumalee{
+    width: 35vw;
+}
+
+
+
+/*Contacto*/
+
+.contenedor-form{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    width:40vw;
+    background-color:#A69256;
+    box-shadow: 1px 3px 56px -11px black;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    margin-top: 6.1vh;
+    height: 48vh;
+}
+
+.formulario{
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    width: 30vw;
+}
+.caja-form{
+    margin:20px;
+    padding:10px;
+    border-radius: 15px;
+    border-color:black;
+    color:white;
+    background: none;
+}
+
+/*saco el background para que quede el fondo del mismo color*/
+form{
+    background: none;
+}
+legend{
+    background: none;
+}
+#btnAceptar{
+    display: flex;
+    background-color:#73B2D9;
+    color:white;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 182px;
+}
+input{
+    background-color: white;
+}
+#nombre{
+    width: 20vw;
+}
+#email{
+    width: 20vw;
+}
+#mensaje{
+    width: 20vw;
+}
+textarea{
+    background-color: white;
+}
+.cont_contact{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: #A69256;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 30px;
+  margin-top: 70px;
+  color: white;
+
+}
+.ref-footer{
+    display: flex;
+    height: 26px;
+    margin-left:0.5rem;
+    transition:all 0.7s ease-in-out;
+}
+.ref-footer:hover{
+    transform: scale(1.2);
+    transition: all 0.7s ease-in-out;
+}
+.ref-footer img{
+    
+    background-color: #A69256;
+}
+.pie-pag{
+    display: flex;
+    background: none;
+    margin:auto;
+}
+
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 250px;
+}
+.contenedorImagen img{
+    width: 220px;
+    height: 250px;
+    border-radius: 20%;
+    margin-left: 100px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: lightgoldenrodyellow;
+    font-family: fantasy;
+}
+
